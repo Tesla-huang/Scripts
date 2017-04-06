@@ -1,0 +1,5 @@
+du: cannot read directory `/Bio/Project/PROJECT/GDY0926/download_ref/Silene_latifolia/silene_454_clustering': Permission denied
+du: cannot read directory `/Bio/Project/PROJECT/GDY0926/download_ref/Silene_latifolia/silene_repeat-spec_454_blast-dbs': Permission denied
+Use of uninitialized value in concatenation (.) or string at check_project_size.pl line 115.
+Use of uninitialized value in concatenation (.) or string at check_project_size.pl line 115.
+Error: connecting smtp.exmail.qq.com fail!

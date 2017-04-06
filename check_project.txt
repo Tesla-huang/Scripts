@@ -1,0 +1,10 @@
+yaokaixin	/Bio/Project/PROJECT/GDD1396	42.54G
+yaokaixin	/Bio/Project/PROJECT/GDE0713	43.95G
+yaokaixin	/Bio/Project/PROJECT/GDI1043	84.24G
+yaokaixin	/Bio/Project/PROJECT/GDI1229	19.64G
+yaokaixin	/Bio/Project/PROJECT/GDR0714	15.37G
+yaokaixin	/Bio/Project/PROJECT/GDR0770	51.32G
+yaokaixin	/Bio/Project/PROJECT/GDR0889_smallRNA	50.58G
+yaokaixin	/Bio/Project/PROJECT/GDR1187-4-circleRNA	2.94G
+yaokaixin	/Bio/Project/PROJECT/GDR1206-12-Denovo-RNAseq	71.38G
+yaokaixin	/Bio/Project/PROJECT/meta	1349.47G

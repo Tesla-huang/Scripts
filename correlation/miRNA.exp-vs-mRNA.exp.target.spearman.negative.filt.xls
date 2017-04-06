@@ -1,0 +1,2 @@
+miRNA	GeneID	cor	pvalue	fdr		C1	M2	M3	M4	C1_RPKM	M2_RPKM	M3_RPKM	M4_RPKM	Description	Pathway	GO Component	GO Function	GO Process
+novel_mir_100	GRMZM2G163081	-0.2	0.916666666666667	0.954451290768087	3.3627	5.9180	2.1143	2.7233	1470.32665257471	658.975906250508	716.998147265463	726.024492497596	60S ribosomal protein L5-1 	ko03010//Ribosome	GO:0005622//intracellular;GO:0005840//ribosome	GO:0003735//structural constituent of ribosome;GO:0008097//5S rRNA binding	GO:0006412//translation

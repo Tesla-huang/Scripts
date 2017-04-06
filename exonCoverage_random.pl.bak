@@ -1,0 +1,179 @@
+#!/usr/bin/perl -w
+
+# RSEM bowtie2.bam exonCoverage_random.pl in ref-RNAseq pipline
+# Reviser: Linyifan (Ivan Lam), yflin@genedenovo.com
+
+use utf8;
+use strict;
+use File::Basename qw{basename};
+use Carp;
+
+die "this script will plot exonCoverage and random at the same time\n
+Usage: perl $0 <12bed> <outprefix> <bam> <exonCoverage y/n> <random y/n>\n" if @ARGV != 5;
+my ($file_bed, $prefix, $file_bam, $exoncov, $random) = @ARGV;
+my %software = map {$_ => (`which $_`)} qw(bedtools Rscript);
+foreach my $i (values %software) {
+	chomp($i);
+}
+
+open my $BED ,'<',$file_bed      or die "<$file_bed: $!";
+open my $BED5,'>',"$prefix.5bed" or die ">$prefix.5bed: $!";
+
+while (<$BED>) {
+	chomp;
+	my ($gene, $strand, $range_str) = (split /\t/)[3,5,10];
+	my @ranges = split /,/, $range_str;
+	my $startsite = 1;
+	my $endsite = 0;
+	foreach my $i (@ranges) {
+		$endsite += $i;
+	}
+	print $BED5 join("\t", $gene, $startsite, $endsite, $gene, $strand),"\n";
+}
+
+
+close $BED;
+close $BED5;
+
+my $bedver = `$software{bedtools} --version`;
+($bedver) = $bedver =~ /v(\d+\.\d+)\./;
+
+if ($bedver < 2.25) {
+	run_cmd("$software{bedtools} coverage -d -abam $file_bam -b $prefix.5bed >$prefix.5bedstat");
+}else{
+	run_cmd("$software{bedtools} bamtobed -i $file_bam | bedtools coverage -d -a $prefix.5bed -b - >$prefix.5bedstat");
+}
+
+my %info;
+my %dp;
+open my $STAT,'<',"$prefix.5bedstat" or die "<$prefix.5bedstat: $!";
+while (<$STAT>) {
+	chomp;
+	my ($gene, $strand, $base, $depth) = (split)[0,4,5,6];
+	if ($exoncov =~ /y/) {
+		$info{$gene}{sum} = 0 if (!exists $info{$gene}{sum});
+		$info{$gene}{sum} ++ if($base > $info{$gene}{sum});
+		$info{$gene}{cov} ++ if($depth > 0);
+	}
+	if ($random =~ /y/) {
+		if ($strand eq "+") {
+			push @{$dp{$gene}}, $depth;
+		}else{
+			unshift @{$dp{$gene}}, $depth;
+		}
+	}
+}
+close $STAT;
+
+if ($exoncov =~ /y/) {
+open my $TEST,'>',"$prefix.test" or die ">$prefix.test: $!";
+my %stat = map {$_ => 0} qw{00-20% 20-40% 40-60% 60-80% 80-100%};
+
+for my $gene (sort keys %info) {
+	$info{$gene}{cov} = 0 if (!exists $info{$gene}{cov});
+	my $ratio = sprintf("%.2f", $info{$gene}{cov} / $info{$gene}{sum});
+	print {$TEST} join("\t", $gene, $info{$gene}{sum},$info{$gene}{cov},$ratio),"\n";
+
+	next if $info{$gene}{cov} == 0;
+
+	my $range = $ratio < 0.2 ? '00-20%'
+              : $ratio < 0.4 ? '20-40%'
+              : $ratio < 0.6 ? '40-60%'
+              : $ratio < 0.8 ? '60-80%'
+              :                '80-100%'
+              ;
+	$stat{$range}++;
+}
+close $TEST;
+
+open my $COV,'>',"$prefix.coverage" or die ">$prefix.coverage: $!";
+print {$COV} "percent\tnumber\n";
+
+for my $range (sort keys %stat) {
+	print {$COV} $range,"\t",$stat{$range},"\n";
+}
+close $COV;
+
+my $smpl = basename $prefix;
+open my $R_CMD,'>',"$prefix.coverage.r" or die ">$prefix.coverage: $!";
+print $R_CMD <<__END_R__;
+library(ggplot2)
+data = read.table('$prefix.coverage', header = T, row.names = 1, sep = "\\t")
+Percent = sprintf("%s: %d (%2.2f%s)", row.names(data), data[,1], 100*data[,1]/sum(data[,1]), '%')
+
+ggplot(data, aes(x='', y=number, fill=Percent)) +
+	geom_bar(stat = "identity", width = 1) +
+	coord_polar(theta = 'y') +
+	theme(axis.text=element_blank(), axis.ticks=element_blank(), panel.grid=element_blank(), panel.background = element_blank() ) +
+	labs(x='',y='',title="Distribution of Genes' Coverage($smpl)")
+ggsave('$prefix.coverage.png', dpi = 200)
+__END_R__
+
+run_cmd("$software{Rscript} $prefix.coverage.r");
+}
+
+if ($random =~ /y/) {
+	my %pc;
+	open WDP, "> $prefix.100depth" or die $!;
+	foreach my $id (sort keys %dp) {
+		print WDP "$id";
+		my $len = @{$dp{$id}};
+		my $s = 0;
+		if ($len < 100) {
+			my @dp_tmp;
+			@dp_tmp = @{$dp{$id}};
+			@{$dp{$id}} = ();
+			foreach my $depth (@dp_tmp) {
+				for my $c (1..10) {
+					push @{$dp{$id}}, $depth;
+				}
+			}
+			undef @dp_tmp;
+			$len = @{$dp{$id}};
+		}
+		for my $i (1..100) {
+			my $wdp = 0;
+			my $end = int($len / 100 * $i) - 1;
+			for my $j ($s..$end) {
+				$wdp += $dp{$id}[$j];
+			}
+			$pc{$id}{$i} = sprintf("%.2f", $wdp / ($end - $s + 1));
+			print WDP "\t$pc{$id}{$i}";
+			$s = $end + 1;
+		}
+		print WDP "\n";
+	}
+	close WDP;
+
+	open ST, "> $prefix.100depth.stat" or die $!;
+	for my $i (1..100) {
+		my $wdp = 0;
+		foreach my $id (keys %pc) {
+			$wdp += $pc{$id}{$i};
+		}
+		print ST "$i\t$wdp\n";
+	}
+	close ST;
+
+	open CMD, "> $prefix.random.r" or die $!;
+	print CMD "
+	mat <- read.table(\"$prefix.100depth.stat\", header = F)
+	png(\"$prefix.geneBodyCoverage.png\")
+	plot(mat\$V1, mat\$V2, type=\"s\", xlab=\"percentile of gene body(5'->3')\", ylab=\"reads number\", ylim=c(0, max(mat\$V2)))
+	dev.off()
+	";
+
+	run_cmd("$software{Rscript} $prefix.random.r");
+}
+
+run_cmd("rm -rf $prefix.5bed $prefix.5bedstat");
+####
+sub run_cmd {
+    my ($cmd) = @_;
+
+    my $ret = system($cmd);
+    $ret == 0
+        or croak "Error, CMD: $cmd died with ret($ret)";
+
+    return;
+}

@@ -1,0 +1,466 @@
+00010	Metabolism	Carbohydrate metabolism	Glycolysis / Gluconeogenesis
+00020	Metabolism	Carbohydrate metabolism	Citrate cycle (TCA cycle)
+00030	Metabolism	Carbohydrate metabolism	Pentose phosphate pathway
+00040	Metabolism	Carbohydrate metabolism	Pentose and glucuronate interconversions
+00051	Metabolism	Carbohydrate metabolism	Fructose and mannose metabolism
+00052	Metabolism	Carbohydrate metabolism	Galactose metabolism
+00053	Metabolism	Carbohydrate metabolism	Ascorbate and aldarate metabolism
+00061	Metabolism	Lipid metabolism	Fatty acid biosynthesis
+00062	Metabolism	Lipid metabolism	Fatty acid elongation
+00071	Metabolism	Lipid metabolism	Fatty acid degradation
+00072	Metabolism	Lipid metabolism	Synthesis and degradation of ketone bodies
+00073	Metabolism	Lipid metabolism	Cutin, suberine and wax biosynthesis
+00100	Metabolism	Lipid metabolism	Steroid biosynthesis
+00120	Metabolism	Lipid metabolism	Primary bile acid biosynthesis
+00121	Metabolism	Lipid metabolism	Secondary bile acid biosynthesis
+00130	Metabolism	Metabolism of cofactors and vitamins	Ubiquinone and other terpenoid-quinone biosynthesis
+00140	Metabolism	Lipid metabolism	Steroid hormone biosynthesis
+00190	Metabolism	Energy metabolism	Oxidative phosphorylation
+00195	Metabolism	Energy metabolism	Photosynthesis
+00196	Metabolism	Energy metabolism	Photosynthesis - antenna proteins
+00230	Metabolism	Nucleotide metabolism	Purine metabolism
+00231	Metabolism	Biosynthesis of other secondary metabolites	Puromycin biosynthesis
+00232	Metabolism	Biosynthesis of other secondary metabolites	Caffeine metabolism
+00240	Metabolism	Nucleotide metabolism	Pyrimidine metabolism
+00250	Metabolism	Amino acid metabolism	Alanine, aspartate and glutamate metabolism
+00253	Metabolism	Metabolism of terpenoids and polyketides	Tetracycline biosynthesis
+00254	Metabolism	Biosynthesis of other secondary metabolites	Aflatoxin biosynthesis
+00260	Metabolism	Amino acid metabolism	Glycine, serine and threonine metabolism
+00270	Metabolism	Amino acid metabolism	Cysteine and methionine metabolism
+00280	Metabolism	Amino acid metabolism	Valine, leucine and isoleucine degradation
+00281	Metabolism	Metabolism of terpenoids and polyketides	Geraniol degradation
+00290	Metabolism	Amino acid metabolism	Valine, leucine and isoleucine biosynthesis
+00300	Metabolism	Amino acid metabolism	Lysine biosynthesis
+00310	Metabolism	Amino acid metabolism	Lysine degradation
+00311	Metabolism	Biosynthesis of other secondary metabolites	Penicillin and cephalosporin biosynthesis
+00312	Human Diseases	Drug resistance	beta-Lactam resistance
+00330	Metabolism	Amino acid metabolism	Arginine and proline metabolism
+00331	Metabolism	Biosynthesis of other secondary metabolites	Clavulanic acid biosynthesis
+00332	Metabolism	Biosynthesis of other secondary metabolites	Carbapenem biosynthesis
+00340	Metabolism	Amino acid metabolism	Histidine metabolism
+00350	Metabolism	Amino acid metabolism	Tyrosine metabolism
+00351	Metabolism	Xenobiotics biodegradation and metabolism	DDT degradation
+00360	Metabolism	Amino acid metabolism	Phenylalanine metabolism
+00361	Metabolism	Xenobiotics biodegradation and metabolism	Chlorocyclohexane and chlorobenzene degradation
+00362	Metabolism	Xenobiotics biodegradation and metabolism	Benzoate degradation
+00363	Metabolism	Xenobiotics biodegradation and metabolism	Bisphenol degradation
+00364	Metabolism	Xenobiotics biodegradation and metabolism	Fluorobenzoate degradation
+00365	Metabolism	Xenobiotics biodegradation and metabolism	Furfural degradation
+00380	Metabolism	Amino acid metabolism	Tryptophan metabolism
+00400	Metabolism	Amino acid metabolism	Phenylalanine, tyrosine and tryptophan biosynthesis
+00401	Metabolism	Biosynthesis of other secondary metabolites	Novobiocin biosynthesis
+00402	Metabolism	Biosynthesis of other secondary metabolites	Benzoxazinoid biosynthesis
+00403	Metabolism	Biosynthesis of other secondary metabolites	Indole diterpene alkaloid biosynthesis
+00410	Metabolism	Metabolism of other amino acids	beta-Alanine metabolism
+00430	Metabolism	Metabolism of other amino acids	Taurine and hypotaurine metabolism
+00440	Metabolism	Metabolism of other amino acids	Phosphonate and phosphinate metabolism
+00450	Metabolism	Metabolism of other amino acids	Selenocompound metabolism
+00460	Metabolism	Metabolism of other amino acids	Cyanoamino acid metabolism
+00471	Metabolism	Metabolism of other amino acids	D-Glutamine and D-glutamate metabolism
+00472	Metabolism	Metabolism of other amino acids	D-Arginine and D-ornithine metabolism
+00473	Metabolism	Metabolism of other amino acids	D-Alanine metabolism
+00480	Metabolism	Metabolism of other amino acids	Glutathione metabolism
+00500	Metabolism	Carbohydrate metabolism	Starch and sucrose metabolism
+00510	Metabolism	Glycan biosynthesis and metabolism	N-Glycan biosynthesis
+00511	Metabolism	Glycan biosynthesis and metabolism	Other glycan degradation
+00512	Metabolism	Glycan biosynthesis and metabolism	Mucin type O-Glycan biosynthesis
+00513	Metabolism	Glycan biosynthesis and metabolism	Various types of N-glycan biosynthesis
+00514	Metabolism	Glycan biosynthesis and metabolism	Other types of O-glycan biosynthesis
+00520	Metabolism	Carbohydrate metabolism	Amino sugar and nucleotide sugar metabolism
+00521	Metabolism	Biosynthesis of other secondary metabolites	Streptomycin biosynthesis
+00522	Metabolism	Metabolism of terpenoids and polyketides	Biosynthesis of 12-, 14- and 16-membered macrolides
+00523	Metabolism	Metabolism of terpenoids and polyketides	Polyketide sugar unit biosynthesis
+00524	Metabolism	Biosynthesis of other secondary metabolites	Butirosin and neomycin biosynthesis
+00531	Metabolism	Glycan biosynthesis and metabolism	Glycosaminoglycan degradation
+00532	Metabolism	Glycan biosynthesis and metabolism	Glycosaminoglycan biosynthesis - chondroitin sulfate / dermatan sulfate
+00533	Metabolism	Glycan biosynthesis and metabolism	Glycosaminoglycan biosynthesis - keratan sulfate
+00534	Metabolism	Glycan biosynthesis and metabolism	Glycosaminoglycan biosynthesis - heparan sulfate / heparin
+00540	Metabolism	Glycan biosynthesis and metabolism	Lipopolysaccharide biosynthesis
+00550	Metabolism	Glycan biosynthesis and metabolism	Peptidoglycan biosynthesis
+00561	Metabolism	Lipid metabolism	Glycerolipid metabolism
+00562	Metabolism	Carbohydrate metabolism	Inositol phosphate metabolism
+00563	Metabolism	Glycan biosynthesis and metabolism	Glycosylphosphatidylinositol(GPI)-anchor biosynthesis
+00564	Metabolism	Lipid metabolism	Glycerophospholipid metabolism
+00565	Metabolism	Lipid metabolism	Ether lipid metabolism
+00590	Metabolism	Lipid metabolism	Arachidonic acid metabolism
+00591	Metabolism	Lipid metabolism	Linoleic acid metabolism
+00592	Metabolism	Lipid metabolism	alpha-Linolenic acid metabolism
+00600	Metabolism	Lipid metabolism	Sphingolipid metabolism
+00601	Metabolism	Glycan biosynthesis and metabolism	Glycosphingolipid biosynthesis - lacto and neolacto series
+00603	Metabolism	Glycan biosynthesis and metabolism	Glycosphingolipid biosynthesis - globo series
+00604	Metabolism	Glycan biosynthesis and metabolism	Glycosphingolipid biosynthesis - ganglio series
+00620	Metabolism	Carbohydrate metabolism	Pyruvate metabolism
+00621	Metabolism	Xenobiotics biodegradation and metabolism	Dioxin degradation
+00622	Metabolism	Xenobiotics biodegradation and metabolism	Xylene degradation
+00623	Metabolism	Xenobiotics biodegradation and metabolism	Toluene degradation
+00624	Metabolism	Xenobiotics biodegradation and metabolism	Polycyclic aromatic hydrocarbon degradation
+00625	Metabolism	Xenobiotics biodegradation and metabolism	Chloroalkane and chloroalkene degradation
+00626	Metabolism	Xenobiotics biodegradation and metabolism	Naphthalene degradation
+00627	Metabolism	Xenobiotics biodegradation and metabolism	Aminobenzoate degradation
+00630	Metabolism	Carbohydrate metabolism	Glyoxylate and dicarboxylate metabolism
+00633	Metabolism	Xenobiotics biodegradation and metabolism	Nitrotoluene degradation
+00640	Metabolism	Carbohydrate metabolism	Propanoate metabolism
+00642	Metabolism	Xenobiotics biodegradation and metabolism	Ethylbenzene degradation
+00643	Metabolism	Xenobiotics biodegradation and metabolism	Styrene degradation
+00650	Metabolism	Carbohydrate metabolism	Butanoate metabolism
+00660	Metabolism	Carbohydrate metabolism	C5-Branched dibasic acid metabolism
+00670	Metabolism	Metabolism of cofactors and vitamins	One carbon pool by folate
+00680	Metabolism	Energy metabolism	Methane metabolism
+00710	Metabolism	Energy metabolism	Carbon fixation in photosynthetic organisms
+00720	Metabolism	Energy metabolism	Carbon fixation pathways in prokaryotes
+00730	Metabolism	Metabolism of cofactors and vitamins	Thiamine metabolism
+00740	Metabolism	Metabolism of cofactors and vitamins	Riboflavin metabolism
+00750	Metabolism	Metabolism of cofactors and vitamins	Vitamin B6 metabolism
+00760	Metabolism	Metabolism of cofactors and vitamins	Nicotinate and nicotinamide metabolism
+00770	Metabolism	Metabolism of cofactors and vitamins	Pantothenate and CoA biosynthesis
+00780	Metabolism	Metabolism of cofactors and vitamins	Biotin metabolism
+00785	Metabolism	Metabolism of cofactors and vitamins	Lipoic acid metabolism
+00790	Metabolism	Metabolism of cofactors and vitamins	Folate biosynthesis
+00791	Metabolism	Xenobiotics biodegradation and metabolism	Atrazine degradation
+00830	Metabolism	Metabolism of cofactors and vitamins	Retinol metabolism
+00860	Metabolism	Metabolism of cofactors and vitamins	Porphyrin and chlorophyll metabolism
+00900	Metabolism	Metabolism of terpenoids and polyketides	Terpenoid backbone biosynthesis
+00901	Metabolism	Biosynthesis of other secondary metabolites	Indole alkaloid biosynthesis
+00902	Metabolism	Metabolism of terpenoids and polyketides	Monoterpenoid biosynthesis
+00903	Metabolism	Metabolism of terpenoids and polyketides	Limonene and pinene degradation
+00904	Metabolism	Metabolism of terpenoids and polyketides	Diterpenoid biosynthesis
+00905	Metabolism	Metabolism of terpenoids and polyketides	Brassinosteroid biosynthesis
+00906	Metabolism	Metabolism of terpenoids and polyketides	Carotenoid biosynthesis
+00908	Metabolism	Metabolism of terpenoids and polyketides	Zeatin biosynthesis
+00909	Metabolism	Metabolism of terpenoids and polyketides	Sesquiterpenoid and triterpenoid biosynthesis
+00910	Metabolism	Energy metabolism	Nitrogen metabolism
+00920	Metabolism	Energy metabolism	Sulfur metabolism
+00930	Metabolism	Xenobiotics biodegradation and metabolism	Caprolactam degradation
+00940	Metabolism	Biosynthesis of other secondary metabolites	Phenylpropanoid biosynthesis
+00941	Metabolism	Biosynthesis of other secondary metabolites	Flavonoid biosynthesis
+00942	Metabolism	Biosynthesis of other secondary metabolites	Anthocyanin biosynthesis
+00943	Metabolism	Biosynthesis of other secondary metabolites	Isoflavonoid biosynthesis
+00944	Metabolism	Biosynthesis of other secondary metabolites	Flavone and flavonol biosynthesis
+00945	Metabolism	Biosynthesis of other secondary metabolites	Stilbenoid, diarylheptanoid and gingerol biosynthesis
+00950	Metabolism	Biosynthesis of other secondary metabolites	Isoquinoline alkaloid biosynthesis
+00960	Metabolism	Biosynthesis of other secondary metabolites	Tropane, piperidine and pyridine alkaloid biosynthesis
+00965	Metabolism	Biosynthesis of other secondary metabolites	Betalain biosynthesis
+00966	Metabolism	Biosynthesis of other secondary metabolites	Glucosinolate biosynthesis
+00970	Genetic Information Processing	Translation	Aminoacyl-tRNA biosynthesis
+00980	Metabolism	Xenobiotics biodegradation and metabolism	Metabolism of xenobiotics by cytochrome P450
+00981	Metabolism	Metabolism of terpenoids and polyketides	Insect hormone biosynthesis
+00982	Metabolism	Xenobiotics biodegradation and metabolism	Drug metabolism - cytochrome P450
+00983	Metabolism	Xenobiotics biodegradation and metabolism	Drug metabolism - other enzymes
+00984	Metabolism	Xenobiotics biodegradation and metabolism	Steroid degradation
+01010	Metabolism	Chemical structure transformation maps	Overview of biosynthetic pathways
+01040	Metabolism	Lipid metabolism	Biosynthesis of unsaturated fatty acids
+01051	Metabolism	Metabolism of terpenoids and polyketides	Biosynthesis of ansamycins
+01052	Metabolism	Metabolism of terpenoids and polyketides	Type I polyketide structures
+01053	Metabolism	Metabolism of terpenoids and polyketides	Biosynthesis of siderophore group nonribosomal peptides
+01054	Metabolism	Metabolism of terpenoids and polyketides	Nonribosomal peptide structures
+01055	Metabolism	Metabolism of terpenoids and polyketides	Biosynthesis of vancomycin group antibiotics
+01056	Metabolism	Metabolism of terpenoids and polyketides	Biosynthesis of type II polyketide backbone
+01057	Metabolism	Metabolism of terpenoids and polyketides	Biosynthesis of type II polyketide products
+01058	Metabolism	Biosynthesis of other secondary metabolites	Acridone alkaloid biosynthesis
+01060	Metabolism	Chemical structure transformation maps	Biosynthesis of plant secondary metabolites
+01061	Metabolism	Chemical structure transformation maps	Biosynthesis of phenylpropanoids
+01062	Metabolism	Chemical structure transformation maps	Biosynthesis of terpenoids and steroids
+01063	Metabolism	Chemical structure transformation maps	Biosynthesis of alkaloids derived from shikimate pathway
+01064	Metabolism	Chemical structure transformation maps	Biosynthesis of alkaloids derived from ornithine, lysine and nicotinic acid
+01065	Metabolism	Chemical structure transformation maps	Biosynthesis of alkaloids derived from histidine and purine
+01066	Metabolism	Chemical structure transformation maps	Biosynthesis of alkaloids derived from terpenoid and polyketide
+01070	Metabolism	Chemical structure transformation maps	Biosynthesis of plant hormones
+01100	Metabolism	Global and overview maps	Metabolic pathways
+01110	Metabolism	Global and overview maps	Biosynthesis of secondary metabolites
+01120	Metabolism	Global and overview maps	Microbial metabolism in diverse environments
+01200	Metabolism	Global and overview maps	Carbon metabolism
+01210	Metabolism	Global and overview maps	2-Oxocarboxylic acid metabolism
+01212	Metabolism	Global and overview maps	Fatty acid metabolism
+01220	Metabolism	Global and overview maps	Degradation of aromatic compounds
+01230	Metabolism	Global and overview maps	Biosynthesis of amino acids
+02010	Environmental Information Processing	Membrane transport	ABC transporters
+02020	Environmental Information Processing	Signal transduction	Two-component system
+02030	Cellular Processes	Cell motility	Bacterial chemotaxis
+02040	Cellular Processes	Cell motility	Flagellar assembly
+02060	Environmental Information Processing	Membrane transport	Phosphotransferase system (PTS)
+03008	Genetic Information Processing	Translation	Ribosome biogenesis in eukaryotes
+03010	Genetic Information Processing	Translation	Ribosome
+03013	Genetic Information Processing	Translation	RNA transport
+03015	Genetic Information Processing	Translation	mRNA surveillance pathway
+03018	Genetic Information Processing	Folding, sorting and degradation	RNA degradation
+03020	Genetic Information Processing	Transcription	RNA polymerase
+03022	Genetic Information Processing	Transcription	Basal transcription factors
+03030	Genetic Information Processing	Replication and repair	DNA replication
+03040	Genetic Information Processing	Transcription	Spliceosome
+03050	Genetic Information Processing	Folding, sorting and degradation	Proteasome
+03060	Genetic Information Processing	Folding, sorting and degradation	Protein export
+03070	Environmental Information Processing	Membrane transport	Bacterial secretion system
+03320	Organismal Systems	Endocrine system	PPAR signaling pathway
+03410	Genetic Information Processing	Replication and repair	Base excision repair
+03420	Genetic Information Processing	Replication and repair	Nucleotide excision repair
+03430	Genetic Information Processing	Replication and repair	Mismatch repair
+03440	Genetic Information Processing	Replication and repair	Homologous recombination
+03450	Genetic Information Processing	Replication and repair	Non-homologous end-joining
+03460	Genetic Information Processing	Replication and repair	Fanconi anemia pathway
+04010	Environmental Information Processing	Signal transduction	MAPK signaling pathway
+04011	Environmental Information Processing	Signal transduction	MAPK signaling pathway - yeast
+04012	Environmental Information Processing	Signal transduction	ErbB signaling pathway
+04013	Environmental Information Processing	Signal transduction	MAPK signaling pathway - fly
+04014	Environmental Information Processing	Signal transduction	Ras signaling pathway
+04015	Environmental Information Processing	Signal transduction	Rap1 signaling pathway
+04020	Environmental Information Processing	Signal transduction	Calcium signaling pathway
+04022	Environmental Information Processing	Signal transduction	cGMP-PKG signaling pathway
+04024	Environmental Information Processing	Signal transduction	cAMP signaling pathway
+04060	Environmental Information Processing	Signaling molecules and interaction	Cytokine-cytokine receptor interaction
+04062	Organismal Systems	Immune system	Chemokine signaling pathway
+04064	Environmental Information Processing	Signal transduction	NF-kappa B signaling pathway
+04066	Environmental Information Processing	Signal transduction	HIF-1 signaling pathway
+04068	Environmental Information Processing	Signal transduction	FoxO signaling pathway
+04070	Environmental Information Processing	Signal transduction	Phosphatidylinositol signaling system
+04075	Environmental Information Processing	Signal transduction	Plant hormone signal transduction
+04080	Environmental Information Processing	Signaling molecules and interaction	Neuroactive ligand-receptor interaction
+04110	Cellular Processes	Cell growth and death	Cell cycle
+04111	Cellular Processes	Cell growth and death	Cell cycle - yeast
+04112	Cellular Processes	Cell growth and death	Cell cycle - Caulobacter
+04113	Cellular Processes	Cell growth and death	Meiosis - yeast
+04114	Cellular Processes	Cell growth and death	Oocyte meiosis
+04115	Cellular Processes	Cell growth and death	p53 signaling pathway
+04120	Genetic Information Processing	Folding, sorting and degradation	Ubiquitin mediated proteolysis
+04122	Genetic Information Processing	Folding, sorting and degradation	Sulfur relay system
+04130	Genetic Information Processing	Folding, sorting and degradation	SNARE interactions in vesicular transport
+04140	Cellular Processes	Transport and catabolism	Regulation of autophagy
+04141	Genetic Information Processing	Folding, sorting and degradation	Protein processing in endoplasmic reticulum
+04142	Cellular Processes	Transport and catabolism	Lysosome
+04144	Cellular Processes	Transport and catabolism	Endocytosis
+04145	Cellular Processes	Transport and catabolism	Phagosome
+04146	Cellular Processes	Transport and catabolism	Peroxisome
+04150	Environmental Information Processing	Signal transduction	mTOR signaling pathway
+04151	Environmental Information Processing	Signal transduction	PI3K-Akt signaling pathway
+04152	Environmental Information Processing	Signal transduction	AMPK signaling pathway
+04210	Cellular Processes	Cell growth and death	Apoptosis
+04260	Organismal Systems	Circulatory system	Cardiac muscle contraction
+04261	Organismal Systems	Circulatory system	Adrenergic signaling in cardiomyocytes
+04270	Organismal Systems	Circulatory system	Vascular smooth muscle contraction
+04310	Environmental Information Processing	Signal transduction	Wnt signaling pathway
+04320	Organismal Systems	Development	Dorso-ventral axis formation
+04330	Environmental Information Processing	Signal transduction	Notch signaling pathway
+04340	Environmental Information Processing	Signal transduction	Hedgehog signaling pathway
+04350	Environmental Information Processing	Signal transduction	TGF-beta signaling pathway
+04360	Organismal Systems	Development	Axon guidance
+04370	Environmental Information Processing	Signal transduction	VEGF signaling pathway
+04380	Organismal Systems	Development	Osteoclast differentiation
+04390	Environmental Information Processing	Signal transduction	Hippo signaling pathway
+04391	Environmental Information Processing	Signal transduction	Hippo signaling pathway - fly
+04510	Cellular Processes	Cellular community	Focal adhesion
+04512	Environmental Information Processing	Signaling molecules and interaction	ECM-receptor interaction
+04514	Environmental Information Processing	Signaling molecules and interaction	Cell adhesion molecules (CAMs)
+04520	Cellular Processes	Cellular community	Adherens junction
+04530	Cellular Processes	Cellular community	Tight junction
+04540	Cellular Processes	Cellular community	Gap junction
+04550	Cellular Processes	Cellular community	Signaling pathways regulating pluripotency of stem cells
+04610	Organismal Systems	Immune system	Complement and coagulation cascades
+04611	Organismal Systems	Immune system	Platelet activation
+04612	Organismal Systems	Immune system	Antigen processing and presentation
+04614	Organismal Systems	Endocrine system	Renin-angiotensin system
+04620	Organismal Systems	Immune system	Toll-like receptor signaling pathway
+04621	Organismal Systems	Immune system	NOD-like receptor signaling pathway
+04622	Organismal Systems	Immune system	RIG-I-like receptor signaling pathway
+04623	Organismal Systems	Immune system	Cytosolic DNA-sensing pathway
+04626	Organismal Systems	Environmental adaptation	Plant-pathogen interaction
+04630	Environmental Information Processing	Signal transduction	Jak-STAT signaling pathway
+04640	Organismal Systems	Immune system	Hematopoietic cell lineage
+04650	Organismal Systems	Immune system	Natural killer cell mediated cytotoxicity
+04660	Organismal Systems	Immune system	T cell receptor signaling pathway
+04662	Organismal Systems	Immune system	B cell receptor signaling pathway
+04664	Organismal Systems	Immune system	Fc epsilon RI signaling pathway
+04666	Organismal Systems	Immune system	Fc gamma R-mediated phagocytosis
+04668	Environmental Information Processing	Signal transduction	TNF signaling pathway
+04670	Organismal Systems	Immune system	Leukocyte transendothelial migration
+04672	Organismal Systems	Immune system	Intestinal immune network for IgA production
+04710	Organismal Systems	Environmental adaptation	Circadian rhythm
+04711	Organismal Systems	Environmental adaptation	Circadian rhythm - fly
+04712	Organismal Systems	Environmental adaptation	Circadian rhythm - plant
+04713	Organismal Systems	Environmental adaptation	Circadian entrainment
+04720	Organismal Systems	Nervous system	Long-term potentiation
+04721	Organismal Systems	Nervous system	Synaptic vesicle cycle
+04722	Organismal Systems	Nervous system	Neurotrophin signaling pathway
+04723	Organismal Systems	Nervous system	Retrograde endocannabinoid signaling
+04724	Organismal Systems	Nervous system	Glutamatergic synapse
+04725	Organismal Systems	Nervous system	Cholinergic synapse
+04726	Organismal Systems	Nervous system	Serotonergic synapse
+04727	Organismal Systems	Nervous system	GABAergic synapse
+04728	Organismal Systems	Nervous system	Dopaminergic synapse
+04730	Organismal Systems	Nervous system	Long-term depression
+04740	Organismal Systems	Sensory system	Olfactory transduction
+04742	Organismal Systems	Sensory system	Taste transduction
+04744	Organismal Systems	Sensory system	Phototransduction
+04745	Organismal Systems	Sensory system	Phototransduction - fly
+04750	Organismal Systems	Sensory system	Inflammatory mediator regulation of TRP channels
+04810	Cellular Processes	Cell motility	Regulation of actin cytoskeleton
+04910	Organismal Systems	Endocrine system	Insulin signaling pathway
+04911	Organismal Systems	Endocrine system	Insulin secretion
+04912	Organismal Systems	Endocrine system	GnRH signaling pathway
+04913	Organismal Systems	Endocrine system	Ovarian steroidogenesis
+04914	Organismal Systems	Endocrine system	Progesterone-mediated oocyte maturation
+04915	Organismal Systems	Endocrine system	Estrogen signaling pathway
+04916	Organismal Systems	Endocrine system	Melanogenesis
+04917	Organismal Systems	Endocrine system	Prolactin signaling pathway
+04918	Organismal Systems	Endocrine system	Thyroid hormone synthesis
+04919	Organismal Systems	Endocrine system	Thyroid hormone signaling pathway
+04920	Organismal Systems	Endocrine system	Adipocytokine signaling pathway
+04921	Organismal Systems	Endocrine system	Oxytocin signaling pathway
+04930	Human Diseases	Endocrine and metabolic diseases	Type II diabetes mellitus
+04932	Human Diseases	Endocrine and metabolic diseases	Non-alcoholic fatty liver disease (NAFLD)
+04940	Human Diseases	Endocrine and metabolic diseases	Type I diabetes mellitus
+04950	Human Diseases	Endocrine and metabolic diseases	Maturity onset diabetes of the young
+04960	Organismal Systems	Excretory system	Aldosterone-regulated sodium reabsorption
+04961	Organismal Systems	Excretory system	Endocrine and other factor-regulated calcium reabsorption
+04962	Organismal Systems	Excretory system	Vasopressin-regulated water reabsorption
+04964	Organismal Systems	Excretory system	Proximal tubule bicarbonate reclamation
+04966	Organismal Systems	Excretory system	Collecting duct acid secretion
+04970	Organismal Systems	Digestive system	Salivary secretion
+04971	Organismal Systems	Digestive system	Gastric acid secretion
+04972	Organismal Systems	Digestive system	Pancreatic secretion
+04973	Organismal Systems	Digestive system	Carbohydrate digestion and absorption
+04974	Organismal Systems	Digestive system	Protein digestion and absorption
+04975	Organismal Systems	Digestive system	Fat digestion and absorption
+04976	Organismal Systems	Digestive system	Bile secretion
+04977	Organismal Systems	Digestive system	Vitamin digestion and absorption
+04978	Organismal Systems	Digestive system	Mineral absorption
+05010	Human Diseases	Neurodegenerative diseases	Alzheimer's disease
+05012	Human Diseases	Neurodegenerative diseases	Parkinson's disease
+05014	Human Diseases	Neurodegenerative diseases	Amyotrophic lateral sclerosis (ALS)
+05016	Human Diseases	Neurodegenerative diseases	Huntington's disease
+05020	Human Diseases	Neurodegenerative diseases	Prion diseases
+05030	Human Diseases	Substance dependence	Cocaine addiction
+05031	Human Diseases	Substance dependence	Amphetamine addiction
+05032	Human Diseases	Substance dependence	Morphine addiction
+05033	Human Diseases	Substance dependence	Nicotine addiction
+05034	Human Diseases	Substance dependence	Alcoholism
+05100	Human Diseases	Infectious diseases: Bacterial	Bacterial invasion of epithelial cells
+05110	Human Diseases	Infectious diseases: Bacterial	Vibrio cholerae infection
+05111	Human Diseases	Infectious diseases: Bacterial	Vibrio cholerae pathogenic cycle
+05120	Human Diseases	Infectious diseases: Bacterial	Epithelial cell signaling in Helicobacter pylori infection
+05130	Human Diseases	Infectious diseases: Bacterial	Pathogenic Escherichia coli infection
+05131	Human Diseases	Infectious diseases: Bacterial	Shigellosis
+05132	Human Diseases	Infectious diseases: Bacterial	Salmonella infection
+05133	Human Diseases	Infectious diseases: Bacterial	Pertussis
+05134	Human Diseases	Infectious diseases: Bacterial	Legionellosis
+05140	Human Diseases	Infectious diseases: Parasitic	Leishmaniasis
+05142	Human Diseases	Infectious diseases: Parasitic	Chagas disease (American trypanosomiasis)
+05143	Human Diseases	Infectious diseases: Parasitic	African trypanosomiasis
+05144	Human Diseases	Infectious diseases: Parasitic	Malaria
+05145	Human Diseases	Infectious diseases: Parasitic	Toxoplasmosis
+05146	Human Diseases	Infectious diseases: Parasitic	Amoebiasis
+05150	Human Diseases	Infectious diseases: Bacterial	Staphylococcus aureus infection
+05152	Human Diseases	Infectious diseases: Bacterial	Tuberculosis
+05160	Human Diseases	Infectious diseases: Viral	Hepatitis C
+05161	Human Diseases	Infectious diseases: Viral	Hepatitis B
+05162	Human Diseases	Infectious diseases: Viral	Measles
+05164	Human Diseases	Infectious diseases: Viral	Influenza A
+05166	Human Diseases	Infectious diseases: Viral	HTLV-I infection
+05168	Human Diseases	Infectious diseases: Viral	Herpes simplex infection
+05169	Human Diseases	Infectious diseases: Viral	Epstein-Barr virus infection
+05200	Human Diseases	Cancers: Overview	Pathways in cancer
+05202	Human Diseases	Cancers: Overview	Transcriptional misregulation in cancer
+05203	Human Diseases	Cancers: Overview	Viral carcinogenesis
+05204	Human Diseases	Cancers: Overview	Chemical carcinogenesis
+05205	Human Diseases	Cancers: Overview	Proteoglycans in cancer
+05206	Human Diseases	Cancers: Overview	MicroRNAs in cancer
+05210	Human Diseases	Cancers: Specific types	Colorectal cancer
+05211	Human Diseases	Cancers: Specific types	Renal cell carcinoma
+05212	Human Diseases	Cancers: Specific types	Pancreatic cancer
+05213	Human Diseases	Cancers: Specific types	Endometrial cancer
+05214	Human Diseases	Cancers: Specific types	Glioma
+05215	Human Diseases	Cancers: Specific types	Prostate cancer
+05216	Human Diseases	Cancers: Specific types	Thyroid cancer
+05217	Human Diseases	Cancers: Specific types	Basal cell carcinoma
+05218	Human Diseases	Cancers: Specific types	Melanoma
+05219	Human Diseases	Cancers: Specific types	Bladder cancer
+05220	Human Diseases	Cancers: Specific types	Chronic myeloid leukemia
+05221	Human Diseases	Cancers: Specific types	Acute myeloid leukemia
+05222	Human Diseases	Cancers: Specific types	Small cell lung cancer
+05223	Human Diseases	Cancers: Specific types	Non-small cell lung cancer
+05230	Human Diseases	Cancers: Overview	Central carbon metabolism in cancer
+05310	Human Diseases	Immune diseases	Asthma
+05320	Human Diseases	Immune diseases	Autoimmune thyroid disease
+05321	Human Diseases	Immune diseases	Inflammatory bowel disease (IBD)
+05322	Human Diseases	Immune diseases	Systemic lupus erythematosus
+05323	Human Diseases	Immune diseases	Rheumatoid arthritis
+05330	Human Diseases	Immune diseases	Allograft rejection
+05332	Human Diseases	Immune diseases	Graft-versus-host disease
+05340	Human Diseases	Immune diseases	Primary immunodeficiency
+05410	Human Diseases	Cardiovascular diseases	Hypertrophic cardiomyopathy (HCM)
+05412	Human Diseases	Cardiovascular diseases	Arrhythmogenic right ventricular cardiomyopathy (ARVC)
+05414	Human Diseases	Cardiovascular diseases	Dilated cardiomyopathy
+05416	Human Diseases	Cardiovascular diseases	Viral myocarditis
+07011	Drug Development	Chronology: Antiinfectives	Penicillins
+07012	Drug Development	Chronology: Antiinfectives	Cephalosporins - parenteral agents
+07013	Drug Development	Chronology: Antiinfectives	Cephalosporins - oral agents
+07014	Drug Development	Chronology: Antiinfectives	Quinolones
+07015	Drug Development	Chronology: Nervous system agents	Local analgesics
+07016	Drug Development	Chronology: Other drugs	Sulfonamide derivatives - sulfa drugs
+07017	Drug Development	Chronology: Other drugs	Sulfonamide derivatives - diuretics
+07018	Drug Development	Chronology: Other drugs	Sulfonamide derivatives - hypoglycemic agents
+07019	Drug Development	Chronology: Antiinfectives	Tetracyclines
+07020	Drug Development	Chronology: Antiinfectives	Macrolides and ketolides
+07021	Drug Development	Chronology: Antiinfectives	Aminoglycosides
+07023	Drug Development	Chronology: Antiinfectives	Rifamycins
+07024	Drug Development	Target-based classification: Enzymes	HMG-CoA reductase inhibitors
+07025	Drug Development	Structure-based classification	Quinolines
+07026	Drug Development	Chronology: Antiinfectives	Antifungal agents
+07027	Drug Development	Chronology: Nervous system agents	Antidepressants
+07028	Drug Development	Chronology: Nervous system agents	Antipsychotics
+07029	Drug Development	Chronology: Nervous system agents	Phenothiazines
+07030	Drug Development	Chronology: Nervous system agents	Anxiolytics
+07031	Drug Development	Chronology: Nervous system agents	Butyrophenones
+07032	Drug Development	Chronology: Nervous system agents	Hypnotics
+07033	Drug Development	Chronology: Nervous system agents	Anticonvulsants
+07034	Drug Development	Structure-based classification	Eicosanoids
+07035	Drug Development	Structure-based classification	Prostaglandins
+07036	Drug Development	Target-based classification: Ion channels	Calcium channel blocking drugs
+07037	Drug Development	Chronology: Other drugs	Antiarrhythmic drugs
+07038	Drug Development	Chronology: Other drugs	Antiulcer drugs
+07039	Drug Development	Chronology: Nervous system agents	Opioid analgesics
+07040	Drug Development	Chronology: Antineoplastics	Antineoplastics - alkylating agents
+07041	Drug Development	Chronology: Antineoplastics	Antineoplastics - antimetabolic agents
+07042	Drug Development	Chronology: Antineoplastics	Antineoplastics - agents from natural products
+07043	Drug Development	Chronology: Antineoplastics	Antineoplastics - hormones
+07044	Drug Development	Chronology: Antiinfectives	Antivirals
+07045	Drug Development	Chronology: Antineoplastics	Antineoplastics - protein kinases inhibitors
+07046	Drug Development	Chronology: Other drugs	Immunosuppressive agents
+07047	Drug Development	Chronology: Other drugs	Osteoporosis drugs
+07048	Drug Development	Chronology: Other drugs	Antimigraines
+07049	Drug Development	Chronology: Other drugs	Antithrombosis agents
+07050	Drug Development	Chronology: Other drugs	Antirheumatics - DMARDs and biological agents
+07051	Drug Development	Chronology: Other drugs	Antidiabetics
+07052	Drug Development	Chronology: Other drugs	Antidyslipidemic agents
+07053	Drug Development	Chronology: Antiinfectives	Anti-HIV agents
+07054	Drug Development	Chronology: Other drugs	Antiglaucoma agents
+07055	Drug Development	Chronology: Other drugs	Sulfonamide derivatives - overview
+07056	Drug Development	Chronology: Nervous system agents	Agents for Alzheimer-type dementia
+07057	Drug Development	Chronology: Nervous system agents	Antiparkinsonian agents
+07110	Drug Development	Skeleton-based classification	Benzoic acid family
+07112	Drug Development	Skeleton-based classification	1,2-Diphenyl substitution family
+07114	Drug Development	Skeleton-based classification	Naphthalene family
+07117	Drug Development	Skeleton-based classification	Benzodiazepine family
+07211	Drug Development	Target-based classification: G protein-coupled receptors	Serotonin receptor agonists/antagonists
+07212	Drug Development	Target-based classification: G protein-coupled receptors	Histamine H1 receptor antagonists
+07213	Drug Development	Target-based classification: G protein-coupled receptors	Dopamine receptor agonists/antagonists
+07214	Drug Development	Target-based classification: G protein-coupled receptors	beta-Adrenergic receptor agonists/antagonists
+07215	Drug Development	Target-based classification: G protein-coupled receptors	alpha-Adrenergic receptor agonists/antagonists
+07216	Drug Development	Target-based classification: Enzymes	Catecholamine transferase inhibitors
+07217	Drug Development	Target-based classification: Enzymes	Renin-angiotensin system inhibitors
+07218	Drug Development	Target-based classification: Enzymes	HIV protease inhibitors
+07219	Drug Development	Target-based classification: Enzymes	Cyclooxygenase inhibitors
+07220	Drug Development	Target-based classification: G protein-coupled receptors	Cholinergic and anticholinergic drugs
+07221	Drug Development	Target-based classification: Ion channels	Nicotinic cholinergic receptor antagonists
+07222	Drug Development	Target-based classification: Nuclear receptors	Peroxisome proliferator-activated receptor (PPAR) agonists
+07223	Drug Development	Target-based classification: Nuclear receptors	Retinoic acid receptor (RAR) and retinoid X receptor (RXR) agonists/antagonists
+07224	Drug Development	Target-based classification: G protein-coupled receptors	Opioid receptor agonists/antagonists
+07225	Drug Development	Target-based classification: Nuclear receptors	Glucocorticoid and meneralocorticoid receptor agonists/antagonists
+07226	Drug Development	Target-based classification: Nuclear receptors	Progesterone, androgen and estrogen receptor agonists/antagonists
+07227	Drug Development	Target-based classification: G protein-coupled receptors	Histamine H2/H3 receptor agonists/antagonists
+07228	Drug Development	Target-based classification: G protein-coupled receptors	Eicosanoid receptor agonists/antagonists
+07229	Drug Development	Target-based classification: G protein-coupled receptors	Angiotensin receptor and endothelin receptor antagonists
+07230	Drug Development	Target-based classification: Ion channels	GABA-A receptor agonists/antagonists
+07231	Drug Development	Target-based classification: Ion channels	Sodium channel blocking drugs
+07232	Drug Development	Target-based classification: Ion channels	Potassium channel blocking and opening drugs
+07233	Drug Development	Target-based classification: Transporters	Ion transporter inhibitors
+07234	Drug Development	Target-based classification: Transporters	Neurotransmitter transporter inhibitors
+07235	Drug Development	Target-based classification: Ion channels	N-Metyl-D-aspartic acid receptor antagonists
