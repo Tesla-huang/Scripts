@@ -39,10 +39,10 @@ while(<FA>)
 	s/^>//;
 	my @lines = split /\n/;
 	my @c = split /\s+/, $lines[0];
-	if($c[0] =~ /^[0-9XYxy]+$/)
-	{
+#	if($c[0] =~ /^[0-9XYxy]+$/)
+#	{
 		print FAO ">$_\n";
-	}
+#	}
 }
 $/ = "\n";
 }

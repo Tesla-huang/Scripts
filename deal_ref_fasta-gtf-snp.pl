@@ -38,7 +38,7 @@ if(-s "$op.fa.fai")
 print STDERR "samtools index is existent\n";
 }else{
 print STDERR "samtools index processing...[2/6]\n";
-`samtools faidx $op.fa`;
+`/Bio/Bin/samtools faidx $op.fa`;
 }
 
 if(-s "$op.dict" or -s "$op.hdrs")
@@ -46,8 +46,8 @@ if(-s "$op.dict" or -s "$op.hdrs")
 print STDERR "picard index is existent\n";
 }else{
 print STDERR "picard index processing...[3/6]\n";
-`java -jar /Bio/Bin/software/picard-tools-1.129/picard.jar CreateSequenceDictionary R=$op.fa O=$op.dict`;
-`perl /Bio/Bin/pipe/RNA/ref_RNASeq/Preprocess/fasta.hdrs.pl $op.fa $op`;
+`java -jar /Bio/Bin/picard.jar CreateSequenceDictionary R=$op.fa O=$op.dict`;
+`/usr/local/bin/perl /Bio/User/linyifan/pipe/RNA/general_RNAseq/Preprocess/fasta.hdrs.pl $op.fa $op`;
 }
 
 my @chrs;
@@ -70,11 +70,11 @@ while(<GTF>)
 {
 	chomp;
 	next if(/^#/);
-	my @tmp = split;
-	my ($id) = $_ =~ /gene_id "([^;]+)";/;
-	$bgl{$id} = 0;
-	#next if($tmp[1] eq "ensembana");
-	push @{$gse{$tmp[0]}{$tmp[3]}{$tmp[4]}}, $_;
+	my @tmp = split /\t/;
+	if($tmp[8] =~ /transcript_biotype "protein_coding";/){
+		$bgl{$1} = 0 if($tmp[8] =~ /gene_id "([^;]+)";/);
+		push @{$gse{$tmp[0]}{$tmp[3]}{$tmp[4]}}, $_;
+	}
 }
 open BGL, "> $op.bgl" or die $!;
 foreach(keys %bgl)
@@ -101,8 +101,8 @@ if(-s "$op\_pep.fa")
 	print STDERR "pep.fa is existent\n";
 }else{
 	print STDERR "gtf to pep processing...[5/6]\n";
-	`gffread $op.gtf -g $op.fa -x $op\_cds.fa`;
-	`perl /Bio/Bin/pipe/RNA/ref_RNASeq/Preprocess/cds2pep.pl $op\_cds.fa $op\_pep.fa`;
+	`/Bio/Bin/gffread $op.gtf -g $op.fa -x $op\_cds.fa`;
+	`/usr/local/bin/perl /Bio/User/linyifan/pipe/RNA/general_RNAseq/Preprocess/cds2pep.pl $op\_cds.fa $op\_pep.fa`;
 }
 
 if(-s "${op}_refGene.txt" or -s "${op}_refGeneMrna.fa")
@@ -112,9 +112,9 @@ print STDERR "2refGene is existent\n";
 print STDERR "gtf to genepred processing...[6/6]\n";
 #`gffread $op.gtf -o $op.gff`;
 #`sed -i 1d $op.gff`;
-`/Bio/Bin/pipe/RNA/ref_RNASeq/Preprocess/gtfToGenePred -genePredExt $op.gtf $op.genepred`;
+`/Bio/User/linyifan/pipe/RNA/general_RNAseq/Preprocess/gtfToGenePred -genePredExt $op.gtf $op.genepred`;
 `awk '{print 1"\t"\$0}' $op.genepred > ${op}_refGene.txt`;
-`perl /Bio/Bin/pipe/RNA/ref_RNASeq/Preprocess/retrieve_seq_from_fasta.pl -format refGene -seqfile $op.fa --outfile ${op}_refGeneMrna.fa ${op}_refGene.txt`;
+`/usr/local/bin/perl /Bio/User/linyifan/pipe/RNA/general_RNAseq/Preprocess/retrieve_seq_from_fasta.pl -format refGene -seqfile $op.fa --outfile ${op}_refGeneMrna.fa ${op}_refGene.txt`;
 }
 
 print STDERR "all done!\n";

@@ -13,17 +13,18 @@ use warnings;
 #use FindBin qw/$Bin $Script/;
 #use lib $Bin;
 
-die "perl $0 <gtf> <feature> <outpre>\n" unless(@ARGV eq 3);
+die "perl $0 <gtf> <outpre>\n" unless(@ARGV eq 2);
 
 open GTF, "$ARGV[0]" or die $!;
 my %hash;
 while (<GTF>) {
+    next if (/^#/);
 	my @tmp = split /\t/, $_;
-	if ($tmp[2] eq "$ARGV[1]") {
+	if ($tmp[2] eq "exon") {
 		die "start pos greater than end pos, please check the gtf file , error line in GTF is $.i\n" if ($tmp[3] > $tmp[4]);
 		my ($gene_id) = $tmp[8] =~ /gene_id "(\S+)";/;
 		my ($trans_id) = $tmp[8] =~ /transcript_id "(\S+)";/;
-		my $length = $tmp[4] - $tmp[3] + 1;
+		my $length = $tmp[4] - $tmp[3];
 		if (!exists $hash{$gene_id}{$trans_id}) {
 			$hash{$gene_id}{$trans_id} = $length;
 		}else{
@@ -33,8 +34,8 @@ while (<GTF>) {
 }
 close GTF;
 
-open OUT, "> $ARGV[2].xls" or die $!;
-open LIST, "> $ARGV[2].gene2tr" or die $!;
+open OUT, "> $ARGV[1].xls" or die $!;
+open LIST, "> $ARGV[1].gene2tr" or die $!;
 foreach my $i (sort keys %hash) {
 	my $best = 0;
 	foreach my $j (sort { $hash{$i}{$b} <=> $hash{$i}{$a} } keys %{$hash{$i}}) {

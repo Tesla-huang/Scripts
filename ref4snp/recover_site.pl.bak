@@ -1,0 +1,87 @@
+#!/usr/bin/env perl
+
+use warnings;
+use strict;
+use utf8;
+
+die "Usage: perl $0 <head[0|1]> <snp.avinput> <new.pos> <new.fa.fai>\n" if @ARGV !=4;
+
+my ($head, $avinput, $pos, $fai) = @ARGV;
+my $h = "$avinput.h";
+if ($head == 1) {
+    `head -n 1 $avinput > $avinput.h`;
+    `sed 1d $avinput > $avinput.mid`;
+}
+`sort -k1,1 -k2,2g $avinput.mid > $avinput.in`;
+my $in = "$avinput.in";
+
+my (%st_arr, %start, %id_st);
+
+open POS, "$pos" or die $!;
+#while (<POS>) {
+#    chomp;
+#    my @tmp = split /\t/, $_;
+#    push @{$st_arr{$tmp[1]}}, $tmp[2];
+#    $start{$tmp[1]}{$tmp[2]} = $tmp[0];
+#    $id_st{$tmp[0]} = $tmp[2];
+#}
+my %pos;
+while (<POS>)
+{
+    chomp;
+# $ori: original_id, $os: original_start, $oe: original_end, $new: new_id, $ns: new_start, $ne: new_end;
+    my ($ori, $os, $oe, $new, $ns, $ne) = split /\t/, $_;
+    $pos{$new}{$ns}{$ne} = "$ori=$os=$oe";
+}
+close POS;
+
+my %fai;
+open IDX, "$fai" or die $!;
+while (<IDX>) {
+    chomp;
+    my @tmp = split /\s+/, $_;
+    $fai{$tmp[0]} = $tmp[1];
+}
+close IDX;
+
+my %end;
+foreach my $i (sort keys %st_arr) {
+    my @end = @{$st_arr{$i}};
+    shift @end;
+    push @end, $fai{$i};
+    my %st2ed;
+    foreach my $s (0..$#end) {
+        $st2ed{${$st_arr{$i}}[$s]} = $end[$s];
+    }
+    foreach my $ss (keys %{$start{$i}}) {
+        $end{$i}{$st2ed{$ss}} = $start{$i}{$ss};
+    }
+}
+
+open IN, "$in" or die $!;
+open OUT, "> $avinput.recover"  or die $!;
+while (<IN>) {
+    chomp;
+    my @tmp = split /\t/, $_;
+    if (!exists $fai{$tmp[0]}) {
+        print OUT $_."\n";
+    }else{
+        my $id_st = 0;
+        my $id = "x";
+        foreach my $e (sort {$a <=> $b} keys %{$end{$tmp[0]}}) {
+            if ($tmp[1] > $e) {
+                delete $end{$tmp[0]}{$e};
+            }else{
+                $id = $end{$tmp[0]}{$e};
+                last;
+            }
+        }
+        $id_st = $id_st{$id};
+        $tmp[0] = $id;
+        $tmp[1] -= $id_st - 1;
+        $tmp[2] -= $id_st - 1;
+        print OUT join("\t", @tmp)."\n";
+    }
+}
+close IN;
+`cat $avinput.h $avinput.recover > $avinput.done`;

@@ -8,7 +8,7 @@ my %wegolist;
 
 while (my $text = <WEGO>){
 	$text =~ s/\s+$//;
-	my @go_num = split /\t/ , $text;
+	my @go_num = split /\s+/ , $text;
 	my $geneid = shift(@go_num);
 	my $i = 0;
 	foreach (@go_num){
